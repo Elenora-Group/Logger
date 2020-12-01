@@ -1,0 +1,27 @@
+{
+  "name": "@developmentcubed/logger",
+  "version": "1.0.0",
+  "description": "A simple logger",
+  "main": "src/logger.js",
+  "typings": "./src/logger.d.ts",
+  "dependencies": {
+    "chalk": "^4.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevelopmentCubed/logger.git"
+  },
+  "keywords": [
+    "logger"
+  ],
+  "author": "Hazed SPaCEx",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/DevelopmentCubed/logger/issues"
+  },
+  "homepage": "https://github.com/DevelopmentCubed/logger#readme"
+}
