@@ -239,8 +239,9 @@ export class Logger {
     const trace = StackTrace.getSync();
 
     if (trace.length >= 3) {
+      const fileName = trace[2].getFileName().split('/');
       message = message
-        .replace('{fileName}', trace[2].getFileName())
+        .replace('{fileName}', fileName[fileName.length - 1])
         .replace('{lineNumber}', trace[2].getLineNumber().toString())
         .replace('{functionName}', trace[2].getFunctionName())
         .replace('{columnNumber}', trace[2].getColumnNumber().toString());
