@@ -33,8 +33,8 @@ export const LEVEL_COLOR = {
 };
 
 export class Logger {
-  private constructor() {}
   private logPath = path.join(process.cwd(), 'logs');
+
   private doWrite = true;
 
   private _level = LEVEL.info;
@@ -289,7 +289,7 @@ export class Logger {
       const stat = fs.statSync(output);
       if (Date.now() - stat.birthtimeMs >= 8.64e7) {
         const newName = `output-${new Date(stat.birthtimeMs).toLocaleDateString(
-          'en-CA'
+          'en-CA',
         )}.log`;
         fs.renameSync(output, path.join(this.logPath, newName));
       }
