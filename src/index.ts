@@ -243,7 +243,9 @@ export class Logger {
       message = message
         .replace(
           '{fileName}',
-          fileName[fileName.length - 1].split('/').at(-1) as string,
+          fileName[fileName.length - 1]
+            .split(process.platform === 'win32' ? '\\' : '/')
+            .at(-1) as string,
         )
         .replace('{lineNumber}', trace[2].getLineNumber().toString())
         .replace('{functionName}', trace[2].getFunctionName())
