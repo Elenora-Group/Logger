@@ -241,7 +241,10 @@ export class Logger {
     if (trace.length >= 3) {
       const fileName = trace[2].getFileName().split('/');
       message = message
-        .replace('{fileName}', fileName[fileName.length - 1])
+        .replace(
+          '{fileName}',
+          fileName[fileName.length - 1].split('/').at(-1) as string,
+        )
         .replace('{lineNumber}', trace[2].getLineNumber().toString())
         .replace('{functionName}', trace[2].getFunctionName())
         .replace('{columnNumber}', trace[2].getColumnNumber().toString());
