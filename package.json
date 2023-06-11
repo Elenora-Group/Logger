@@ -1,6 +1,6 @@
 {
-  "name": "@developmentcubed/logger",
-  "version": "2.0.3",
+  "name": "@elenoragroup/logger",
+  "version": "1.0.0",
   "description": "A simple logger",
   "main": "dist/commonjs/index.js",
   "module": "dist/esm/index.js",
@@ -43,15 +43,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DevelopmentCubed/logger.git"
+    "url": "git+https://github.com/Elenora-Group/Logger.git"
   },
   "keywords": [
     "logger"
   ],
-  "author": "Hazed SPaCEx",
+  "author": "Elenora Group",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/DevelopmentCubed/logger/issues"
+    "url": "https://github.com/Elenora-Group/Logger/issues"
   },
-  "homepage": "https://github.com/DevelopmentCubed/logger#readme"
+  "homepage": "https://github.com/Elenora-Group/Logger#readme"
 }
