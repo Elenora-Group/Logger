@@ -41,17 +41,9 @@
     "version": "git add -A src",
     "postversion": "git push && git push --tags"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Elenora-Group/Logger.git"
-  },
   "keywords": [
     "logger"
   ],
   "author": "Elenora Group",
-  "license": "GPL-3.0-or-later",
-  "bugs": {
-    "url": "https://github.com/Elenora-Group/Logger/issues"
-  },
-  "homepage": "https://github.com/Elenora-Group/Logger#readme"
+  "license": "GPL-3.0-or-later"
 }
